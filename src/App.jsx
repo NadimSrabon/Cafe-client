@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom'
 import './App.css'
 import CoffeeCard from './CoffeeCard';
 import { useState } from 'react';
+import Navbar from './Navbar';
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
 
   return (
     <>
-      <h1 className='text-5xl text-purple-500'>Cold Coffees: {coffees.length}</h1>
+      <Navbar></Navbar>
+      <h1 className='text-5xl text-purple-500 pt-10'>Cold Coffees: {coffees.length}</h1>
 
       <div className='grid grid-cols-2 space-y-4'>
         {
